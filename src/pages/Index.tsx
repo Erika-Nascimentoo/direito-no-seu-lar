@@ -269,10 +269,10 @@ const Index = () => {
               { q: "Quais documentos preciso para iniciar?", a: "Carteirinha do plano, relatório médico, negativa do plano (se houver por escrito) e documentos pessoais. Orientamos tudo no primeiro contato." }].
               map((item, i) =>
               <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-6 bg-card">
-                  <AccordionTrigger className="text-center md:text-left font-semibold text-foreground text-sm hover:no-underline py-4 flex flex-col items-center md:items-start">
+                  <AccordionTrigger className="font-semibold text-foreground text-sm hover:no-underline py-5">
                     {item.q}
                   </AccordionTrigger>
-                  <AccordionContent className="text-center md:text-left text-muted-foreground font-body text-sm pb-4">
+                  <AccordionContent className="text-muted-foreground font-body text-sm pb-5 leading-relaxed">
                     {item.a}
                   </AccordionContent>
                 </AccordionItem>
