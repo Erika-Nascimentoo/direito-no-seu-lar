@@ -139,6 +139,33 @@ const Index = () => {
         </div>
       </section>
 
+      {/* DEPOIMENTOS */}
+      <section className="py-20 md:py-28 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">O que nossos <span className="text-accent">clientes dizem</span></h2>
+            <p className="text-muted-foreground font-body text-lg">Avaliações reais de quem confiou no nosso trabalho.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Samantha Ribeiro", text: "Profissionais muito bem preparadas. Excelente atendimento, principalmente para quem busca advogada trabalhista/previdenciarista e orientações sobre INSS. Recomendo o escritório pela atenção, competência e cuidado com os clientes." },
+              { name: "Valeria Ribeiro Gomes", text: "Ótima profissional! Muito competente em Direito Trabalhista e INSS, atendimento claro, humano e eficiente. Recomendo." },
+              { name: "Helena Rodrigues", text: "Profissional de altíssimo nível! Uma advogada previdenciária e trabalhista extremamente dedicada, que alia competência técnica a um atendimento humano e respeitoso. Sempre atualizada e preparada para defender com excelência os direitos do INSS. Referência na área!" },
+            ].map((item, i) => (
+              <div key={i} className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4">
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} size={16} className="fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed flex-1">"{item.text}"</p>
+                <p className="font-display text-sm text-foreground font-semibold">{item.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* EQUIPE */}
       <section id="equipe" className="py-20 md:py-28 bg-muted">
         <div className="container mx-auto px-4">
@@ -231,33 +258,6 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm font-body">{item.desc}</p>
               </div>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* DEPOIMENTOS */}
-      <section className="py-20 md:py-28 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">O que nossos <span className="text-accent">clientes dizem</span></h2>
-            <p className="text-muted-foreground font-body text-lg">Avaliações reais de quem confiou no nosso trabalho.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              { name: "Samantha Ribeiro", text: "Profissionais muito bem preparadas. Excelente atendimento, principalmente para quem busca advogada trabalhista/previdenciarista e orientações sobre INSS. Recomendo o escritório pela atenção, competência e cuidado com os clientes." },
-              { name: "Valeria Ribeiro Gomes", text: "Ótima profissional! Muito competente em Direito Trabalhista e INSS, atendimento claro, humano e eficiente. Recomendo." },
-              { name: "Helena Rodrigues", text: "Profissional de altíssimo nível! Uma advogada previdenciária e trabalhista extremamente dedicada, que alia competência técnica a um atendimento humano e respeitoso. Sempre atualizada e preparada para defender com excelência os direitos do INSS. Referência na área!" },
-            ].map((item, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} size={16} className="fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed flex-1">"{item.text}"</p>
-                <p className="font-display text-sm text-foreground font-semibold">{item.name}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
