@@ -124,7 +124,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 md:order-1">
-              <img src={sobreImg} alt="Maria Laura sorrindo" className="rounded-lg shadow-elegant w-full max-w-md mx-auto" />
+              <img alt="Maria Laura sorrindo" className="rounded-lg shadow-elegant w-full max-w-md mx-auto" src="/lovable-uploads/1b1b4b26-4ec1-455d-8715-b13fc0e37215.jpg" />
             </div>
             <div className="order-1 md:order-2 text-center md:text-left">
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">Sobre a <span className="text-accent">HM Advocacia</span></h2>
@@ -148,20 +148,20 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { name: "Samantha Ribeiro", text: "Profissionais muito bem preparadas. Excelente atendimento, principalmente para quem busca advogada trabalhista/previdenciarista e orientações sobre INSS. Recomendo o escritório pela atenção, competência e cuidado com os clientes." },
-              { name: "Valeria Ribeiro Gomes", text: "Ótima profissional! Muito competente em Direito Trabalhista e INSS, atendimento claro, humano e eficiente. Recomendo." },
-              { name: "Helena Rodrigues", text: "Profissional de altíssimo nível! Uma advogada previdenciária e trabalhista extremamente dedicada, que alia competência técnica a um atendimento humano e respeitoso. Sempre atualizada e preparada para defender com excelência os direitos do INSS. Referência na área!" },
-            ].map((item, i) => (
-              <div key={i} className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4">
+            { name: "Samantha Ribeiro", text: "Profissionais muito bem preparadas. Excelente atendimento, principalmente para quem busca advogada trabalhista/previdenciarista e orientações sobre INSS. Recomendo o escritório pela atenção, competência e cuidado com os clientes." },
+            { name: "Valeria Ribeiro Gomes", text: "Ótima profissional! Muito competente em Direito Trabalhista e INSS, atendimento claro, humano e eficiente. Recomendo." },
+            { name: "Helena Rodrigues", text: "Profissional de altíssimo nível! Uma advogada previdenciária e trabalhista extremamente dedicada, que alia competência técnica a um atendimento humano e respeitoso. Sempre atualizada e preparada para defender com excelência os direitos do INSS. Referência na área!" }].
+            map((item, i) =>
+            <div key={i} className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4">
                 <div className="flex gap-1">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} size={16} className="fill-accent text-accent" />
-                  ))}
+                  {[...Array(5)].map((_, j) =>
+                <Star key={j} size={16} className="fill-accent text-accent" />
+                )}
                 </div>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed flex-1">"{item.text}"</p>
                 <p className="font-display text-sm text-foreground font-semibold">{item.name}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
