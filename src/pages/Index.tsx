@@ -176,7 +176,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {[
             { img: mariaLauraImg, name: "Maria Laura Alves de Souza", role: "Advogada | Direito da Saúde" },
-            { img: heloisaImg, name: "Heloisa Sampaio", role: "Advogada | Direito da Saúde" }].
+            { img: heloisaImg, name: "Heloisa Sampaio", role: "Advogada | Previdenciário" }].
             map((member, i) =>
             <div key={i} className="bg-card rounded-lg overflow-hidden shadow-elegant group">
                 <div className="aspect-[3/4] overflow-hidden">
