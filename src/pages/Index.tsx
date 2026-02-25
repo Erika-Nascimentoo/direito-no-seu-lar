@@ -223,7 +223,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
             { step: "01", title: "Contato", desc: "Entre em contato por WhatsApp ou formulário." },
-            { step: "02", title: "Análise", desc: "Avaliamos seu caso sem custos iniciais." },
+            { step: "02", title: "Análise", desc: "Caso você tenha um negativa, conseguimos analisar já na triagem pelo WhatsApp se há viabilidade." },
             { step: "03", title: "Estratégia", desc: "Definimos a melhor estratégia jurídica." },
             { step: "04", title: "Ação", desc: "Entramos com a ação e acompanhamos até o final." }].
             map((item, i) =>
