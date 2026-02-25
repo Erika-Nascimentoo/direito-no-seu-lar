@@ -288,7 +288,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-3">
               {[
-              { q: "Quanto custa a consulta inicial?", a: "A análise inicial do seu caso é totalmente gratuita. Avaliamos sua situação e apresentamos as opções jurídicas sem nenhum compromisso." },
+              { q: "Como funciona o primeiro contato?", a: "A primeira análise é feita pelo WhatsApp pela nossa equipe. Vendo que há viabilidade, encaminhamos para os próximos passos do atendimento." },
               { q: "Vocês atendem em todo o Brasil?", a: "Sim! Temos escritório físico em Petrolina/PE e atendemos online em todo o território nacional." },
               { q: "Quanto tempo demora o processo?", a: "Nos casos urgentes, conseguimos liminares em poucos dias. O prazo total depende da complexidade do caso e do tribunal." },
               { q: "O plano de saúde pode negar minha cirurgia?", a: "Na maioria dos casos, a negativa é abusiva e ilegal. A legislação brasileira garante a cobertura de procedimentos prescritos pelo médico assistente." },
