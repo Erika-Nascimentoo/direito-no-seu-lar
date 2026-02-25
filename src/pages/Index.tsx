@@ -105,7 +105,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-            { icon: Shield, title: "Análise Jurídica", desc: "Avaliamos seu caso gratuitamente e identificamos a melhor estratégia para reverter a negativa." },
+            { icon: Shield, title: "Análise Jurídica", desc: "Avaliamos seu caso e identificamos a melhor estratégia para reverter a negativa." },
             { icon: Scale, title: "Ação Judicial", desc: "Entramos com pedido liminar para garantir a cobertura imediata do seu tratamento." },
             { icon: Heart, title: "Acompanhamento", desc: "Acompanhamos todo o processo até a resolução, mantendo você informado a cada passo." }].
             map((item, i) =>
